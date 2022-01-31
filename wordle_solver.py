@@ -12988,7 +12988,7 @@ def letter_dict():
         'H': {},
         'I': {},
         'J': {},
-        'K': {},iopkl
+        'K': {},
         'L': {},
         'M': {},
         'N': {},
@@ -13005,7 +13005,6 @@ def letter_dict():
         'Y': {},
         'Z': {},
     }
-
 
 
 class WordListNode:
@@ -13074,7 +13073,7 @@ class WordList:
             if letter in letters_not_in_word:
                 del letters_not_in_word[letter]
 
-            # delete from words_without_letter too
+        # delete from words_without_letter too
         for letter in letters_not_in_word:
             if node.word in self.words_without_letter[letter]:
                 del self.words_without_letter[letter][node.word]
